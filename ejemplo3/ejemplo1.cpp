@@ -171,12 +171,14 @@ void ejemplo1::doButtonSetPeriod()
  */
 void ejemplo1::doButtonRestart()
 {
-    hilo.pause();
+    //hilo.pause();
     mtx.lock();
     valor=0;
     lcdNumber->display(valor);
     mtx.unlock();
-    hilo.start();
+    //buttonStart->setDisabled(1);
+    //buttonPause->setEnabled(1);
+    //hilo.start();
 }
 
 
